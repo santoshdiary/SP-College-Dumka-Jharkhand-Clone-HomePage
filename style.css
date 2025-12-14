@@ -1,0 +1,410 @@
+
+
+
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.college-header h1{
+  font-family:'Montserrat';
+}
+
+.nav-bar li{
+  font-family: 'Spectral';
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3fdf4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Green-themed Navigation */
+nav {
+  background-color: #102d01; /* black */
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding-left: 40px; /* adds space inside the nav */
+position: sticky;
+top: 0;
+width: 100%;
+z-index: 1000; /* ensures it stays above other elements */
+
+ 
+}
+
+
+
+
+nav .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0px;;
+  padding: 0px;
+ 
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #00cc66; /* Optional: green highlight on hover */
+}
+
+/* Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 20px auto;
+  background-color: white;
+  border-left: 5px solid #009900;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+section h1,
+section h2 {
+  color: #006600;
+  margin-bottom: 20px;
+}
+
+section p,
+section ul {
+  font-size: 17px;
+  color: #444;
+}
+
+/* List styling */
+ul li {
+  margin-bottom: 8px;
+}
+
+/* General Links */
+a {
+  color: #006600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive menu hint */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #009900;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+#topBtn:hover {
+  background-color: #007a00;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 100px;;
+  width: auto;
+ 
+}
+
+.sign{
+  
+      background-color: #4CAF50; /* Green background */
+      color: white;              /* White text */
+      padding: 10px 20px;        /* Padding */
+      font-size: 16px;           /* Font size */
+      border: none;              /* No border */
+      border-radius: 5px;        /* Rounded corners */
+      cursor: pointer;           /* Cursor pointer on hover */
+      transition: background-color 0.3s ease; /* Smooth hover effect */
+      font-family:'Montserrat' ;
+      align-items: stretch;
+   
+   
+
+    
+
+  
+}
+  .sign:hover{
+      background-color: #09470c; /* Darker green on hover */
+    }
+
+
+.logo span {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.college-header {
+  background-color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 100, 0, 0.15);
+  border-bottom: 2px solid #006600;
+}
+
+.college-header .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.college-logo {
+  height: 100px;
+  width: auto;
+}
+
+.college-names h1 {
+  color: #006600;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.college-names h2 {
+  color: #004d00;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.college-names p {
+  color: #333;
+  font-size: 14px;
+}
+.footer {
+  background-color: #042c04;
+  color: white;
+  padding: 40px 20px 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.footer-section p{
+  font-family:'Spectral Medium';
+}
+.footer-container li{
+  font-family:'Spectral Medium';
+}
+
+.footer-section {
+  flex: 1 1 300px;
+}
+
+.footer-section h3 {
+  color: #f4f8f4;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footer-section p{
+  color: #ccffcc;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section a {
+  color: #ccffcc;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #338833;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #ccffcc;
+}
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  font-size: medium;
+  background-color: rgba(1, 14, 1, 0.85);
+
+}
+.hero-section p,h2{
+  font-family: 'Spectral Medium';
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(1, 32, 1, 0.85); /* Green translucent background */
+  color: #fff;
+  padding: 30px;
+  max-width: 90%;
+  width: 700px;
+  text-align: justify;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.hero-overlay h2 {
+  margin-top: 3;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.main-section {
+  display: flex;
+  justify-content:space-between;
+  align-items: first baseline;
+  gap: 30px;
+  align-items: stretch; /* make the height of both container same */
+  
+  margin: 0%;
+  padding: 50px;;
+}
+
+.principal-desk {
+  flex: 0 1 70%;
+  background-color: #c9f3bc;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(66, 5, 5, 0.1);
+}
+
+.announcement-box {
+  flex: 0 1 30%;
+  background-color: #c9f3bc;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.principal-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: 'Spectral Medium';
+}
+
+.principal-photo {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(4, 64, 65, 0.15);
+  stroke: rgb(12, 71, 73);
+}
+
+.principal-message {
+  flex: 1;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+.announcement-box h2,
+.principal-desk h2 {
+  color: #006600;
+  margin-bottom: 20px;
+  font-size: 22px;
+  border-bottom: 2px solid #006600;
+  padding-bottom: 8px;
+}
+
+.announcement-box ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Spectral Medium';
+}
+
+.announcement-box li {
+  background: #eaffea;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 4px solid #006600;
+  border-radius: 4px;
+}
+.college-header h2{
+    color: #E9762B;
+    font-size:40px;
+  font-family: 'Anek Devanagari', sans-serif;
+   
+}
+.college-header h1{
+    font-size: xx-large;
+}
+.college-header p {
+font-family:'Montserrat', Times, serif;
+}
